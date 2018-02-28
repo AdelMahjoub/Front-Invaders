@@ -1,0 +1,261 @@
+{
+  "sounds": [
+    {
+      "name": "SFX:PlayerLaser",
+      "class": "Sound",
+      "properties": {
+        "type": "sfx",
+        "key": "SFX:PlayerLaser",
+        "volume": 0.2,
+        "loop": false
+      }
+    },
+    {
+      "name": "SFX:EnemyLaser",
+      "class": "Sound",
+      "properties": {
+        "type": "sfx",
+        "key": "SFX:EnemyLaser",
+        "volume": 0.5,
+        "loop": false
+      }
+    },
+    {
+      "name": "SFX:AsteroidExplosion",
+      "class": "Sound",
+      "properties": {
+        "type": "sfx",
+        "key": "SFX:AsteroidExplosion",
+        "volume": 0.5,
+        "loop": false
+      }
+    },
+    {
+      "name": "SFX:ShipExplosion",
+      "class": "Sound",
+      "properties": {
+        "type": "sfx",
+        "key": "SFX:ShipExplosion",
+        "volume": 0.5,
+        "loop": false
+      }
+    },
+    {
+      "name": "SFX:Start",
+      "class": "Sound",
+      "properties": {
+        "type": "sfx",
+        "key": "SFX:Start",
+        "volume": 0.4,
+        "loop": false
+      }
+    },
+    {
+      "name": "SFX:TakeOff",
+      "class": "Sound",
+      "properties": {
+        "type": "sfx",
+        "key": "SFX:TakeOff",
+        "volume": 0.4,
+        "loop": false
+      }
+    },
+    {
+      "name": "SFX:Browse",
+      "class": "Sound",
+      "properties": {
+        "type": "sfx",
+        "key": "SFX:Browse",
+        "volume": 0.4,
+        "loop": false
+      }
+    },
+    {
+      "name": "SFX:BackToTitle",
+      "class": "Sound",
+      "properties": {
+        "type": "sfx",
+        "key": "SFX:BackToTitle",
+        "volume": 0.4,
+        "loop": false
+      }
+    },
+    {
+      "name": "SFX:AmbienceSpace",
+      "class": "Sound",
+      "properties": {
+        "type": "sfx",
+        "key": "SFX:AmbienceSpace",
+        "volume": 0.2,
+        "loop": true
+      }
+    },
+    {
+      "name": "SFX:ToGameOver",
+      "class": "Sound",
+      "properties": {
+        "type": "sfx",
+        "key": "SFX:ToGameOver",
+        "volume": 0.2,
+        "loop": false
+      }
+    },
+    {
+      "name": "SFX:ShieldBoost",
+      "class": "Sound",
+      "properties": {
+        "type": "sfx",
+        "key": "SFX:ShieldBoost",
+        "volume": 0.2,
+        "loop": false
+      }
+    },
+    {
+      "name": "SFX:LifeBoost",
+      "class": "Sound",
+      "properties": {
+        "type": "sfx",
+        "key": "SFX:LifeBoost",
+        "volume": 0.7,
+        "loop": false
+      }
+    },
+    {
+      "name": "SFX:PickupBronze",
+      "class": "Sound",
+      "properties": {
+        "type": "sfx",
+        "key": "SFX:PickupBronze",
+        "volume": 0.2,
+        "loop": false
+      }
+    },
+    {
+      "name": "SFX:PickupSilver",
+      "class": "Sound",
+      "properties": {
+        "type": "sfx",
+        "key": "SFX:PickupSilver",
+        "volume": 0.2,
+        "loop": false
+      }
+    },
+    {
+      "name": "SFX:PickupGold",
+      "class": "Sound",
+      "properties": {
+        "type": "sfx",
+        "key": "SFX:PickupGold",
+        "volume": 0.2,
+        "loop": false
+      }
+    },
+    {
+      "name": "SFX:Resume",
+      "class": "Sound",
+      "properties": {
+        "type": "sfx",
+        "key": "SFX:Resume",
+        "volume": 0.4,
+        "loop": false
+      }
+    },
+    {
+      "name": "SFX:ShieldHit",
+      "class": "Sound",
+      "properties": {
+        "type": "sfx",
+        "key": "SFX:ShieldHit",
+        "volume": 0.4,
+        "loop": false
+      }
+    },
+    {
+      "name": "SFX:HullHit",
+      "class": "Sound",
+      "properties": {
+        "type": "sfx",
+        "key": "SFX:HullHit",
+        "volume": 0.4,
+        "loop": false
+      }
+    },
+    {
+      "name": "Track:CrimsonDrive",
+      "class": "Sound",
+      "properties": {
+        "type": "track",
+        "screen": "Play",
+        "key": "Track:CrimsonDrive",
+        "volume": 0.8,
+        "loop": false
+      }
+    },
+    {
+      "name": "Track:FieldsOfIce",
+      "class": "Sound",
+      "properties": {
+        "type": "track",
+        "screen": "Play",
+        "key": "Track:FieldsOfIce",
+        "volume": 0.8,
+        "loop": false
+      }
+    },
+    {
+      "name": "Track:Sunstrider",
+      "class": "Sound",
+      "properties": {
+        "type": "track",
+        "screen": "Play",
+        "key": "Track:Sunstrider",
+        "volume": 0.8,
+        "loop": false
+      }
+    },
+    {
+      "name": "Track:MechaCollection",
+      "class": "Sound",
+      "properties": {
+        "type": "track",
+        "screen": "Play",
+        "key": "Track:MechaCollection",
+        "volume": 0.8,
+        "loop": false
+      }
+    },
+    {
+      "name": "Track:ZeroRespect",
+      "class": "Sound",
+      "properties": {
+        "type": "track",
+        "screen": "Play",
+        "key": "Track:ZeroRespect",
+        "volume": 0.8,
+        "loop": false
+      }
+    },
+    {
+      "name": "Track:TitleTheme",
+      "class": "Sound",
+      "properties": {
+        "type": "track",
+        "screen": "Select",
+        "key": "Track:TitleTheme",
+        "volume": 0.8,
+        "loop": false
+      }
+    },
+    {
+      "name": "Track:AbandonedHopes",
+      "class": "Sound",
+      "properties": {
+        "type": "track",
+        "screen": "Start",
+        "key": "Track:AbandonedHopes",
+        "volume": 0.8,
+        "loop": false
+      }
+    }
+  ]
+}

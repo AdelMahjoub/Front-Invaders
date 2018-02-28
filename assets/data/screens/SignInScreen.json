@@ -1,0 +1,69 @@
+{
+  "prefabs": [
+    {
+      "name": "SignIn:Background",
+      "class": "ScrollingBackground",
+      "properties": {
+        "texture": "StarfieldBlue",
+        "position": {"x": 0, "y": 0},
+        "isScrollable": false,
+        "width": 360,
+        "height": 640,
+        "group": "Backgrounds"
+      }
+    },
+    {
+      "name": "GUI:HomeBtn",
+      "class": "Button",
+      "properties": {
+        "position": {"x": 334, "y": 26},
+        "texture": "HomeBtn",
+        "callback": "__SwitchScreen",
+        "callbackContext": "gameState",
+        "args": ["Start"],
+        "anchor": {"x": 0.5, "y": 0.5},
+        "group": "GUI"
+      }
+    },
+    {
+      "name": "SignIn:Title",
+      "class": "BitmapText",
+      "properties": {
+        "position": {"x": 180, "y": 130},
+        "anchor": {"x": 0.5, "y": 0.5},
+        "text": "Signin or Login",
+        "font": "verminVibes",
+        "size": 30,
+        "align": "center",
+        "group": "Texts"
+      }
+    },
+    {
+      "name": "SignIn:message",
+      "class": "BitmapText",
+      "properties": {
+        "position": {"x": 180, "y": 170},
+        "anchor": {"x": 0.5, "y": 0.5},
+        "text": "Your best score will be saved \nand you can access \nthe Top 10 scorers leaderboard.",
+        "font": "verminVibes",
+        "size": 16,
+        "align": "center",
+        "group": "Texts"
+      }
+    },
+    {
+      "name": "SignIn:SyncMessage",
+      "class": "BitmapText",
+      "properties": {
+        "position": {"x": 180, "y": 320},
+        "anchor": {"x": 0.5, "y": 0.5},
+        "text": "Synchronization",
+        "visible": false,
+        "font": "verminVibes",
+        "size": 18,
+        "align": "center",
+        "group": "Texts"
+      }
+    }
+  ]
+}

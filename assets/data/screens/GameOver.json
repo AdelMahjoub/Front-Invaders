@@ -1,0 +1,188 @@
+{
+  "prefabs": [
+    {
+      "name": "GameOver:Background",
+      "class": "ScrollingBackground",
+      "properties": {
+        "texture": "StarfieldPurple",
+        "position": {"x": 0, "y": 0},
+        "width": 360,
+        "height": 640,
+        "group": "Backgrounds"
+      }
+    },
+    {
+      "name": "GameOver:Message",
+      "class": "BitmapText",
+      "properties": {
+        "position": {"x": 180, "y": 100},
+        "text": "Game Over",
+        "anchor": {"x": 0.5, "y": 0.5},
+        "font": "verminVibes",
+        "size": 30,
+        "align": "center",
+        "group": "Texts"
+      }
+    },
+    {
+      "name": "GameOver:ScoreText",
+      "class": "BitmapText",
+      "properties": {
+        "position": {"x": 180, "y": 180},
+        "text": "Score",
+        "anchor": {"x": 0.5, "y": 0.5},
+        "font": "verminVibes",
+        "size": 18,
+        "align": "center",
+        "group": "Texts"
+      }
+    },
+    {
+      "name": "GameOver:WaveText",
+      "class": "BitmapText",
+      "properties": {
+        "position": {"x": 180, "y": 225},
+        "text": "Wave",
+        "anchor": {"x": 0.5, "y": 0.5},
+        "font": "verminVibes",
+        "size": 18,
+        "align": "center",
+        "group": "Texts"
+      }
+    },
+    {
+      "name": "GameOver:TotalText",
+      "class": "BitmapText",
+      "properties": {
+        "position": {"x": 180, "y": 270},
+        "text": "Total",
+        "anchor": {"x": 0.5, "y": 0.5},
+        "font": "verminVibes",
+        "size": 18,
+        "align": "center",
+        "group": "Texts"
+      }
+    },
+    {
+      "name": "GameOver:HiScoreText",
+      "class": "BitmapText",
+      "properties": {
+        "position": {"x": 180, "y": 340},
+        "text": "Best",
+        "anchor": {"x": 0.5, "y": 0.5},
+        "font": "verminVibes",
+        "size": 18,
+        "align": "center",
+        "group": "Texts"
+      }
+    },
+    {
+      "name": "GameOver:ContinueBtn",
+      "class": "Button",
+      "properties": {
+        "position": {"x": 180, "y": 420},
+        "texture": "GlassBtn",
+        "callback": "__SwitchScreen",
+        "callbackContext": "gameState",
+        "args": ["Play", true],
+        "anchor": {"x": 0.5, "y": 0.5},
+        "group": "Buttons"
+      }
+    },
+    {
+      "name": "GameOver:ContinueBtnLabel",
+      "class": "BitmapText",
+      "properties": {
+        "position": {"x": 180, "y": 422},
+        "anchor": {"x": 0.5, "y": 0.5},
+        "text": "Continue",
+        "font": "verminVibes",
+        "size": 18,
+        "align": "center",
+        "tint": "0x3a2e3f",
+        "group": "Texts"
+      }
+    },
+    {
+      "name": "GameOver:RestartBtn",
+      "class": "Button",
+      "properties": {
+        "position": {"x": 180, "y": 480},
+        "texture": "GlassBtn",
+        "callback": "__SwitchScreen",
+        "callbackContext": "gameState",
+        "args": ["Play", false],
+        "anchor": {"x": 0.5, "y": 0.5},
+        "group": "Buttons"
+      }
+    },
+    {
+      "name": "GameOver:RestartBtnLabel",
+      "class": "BitmapText",
+      "properties": {
+        "position": {"x": 180, "y": 482},
+        "anchor": {"x": 0.5, "y": 0.5},
+        "text": "Restart",
+        "font": "verminVibes",
+        "size": 18,
+        "align": "center",
+        "tint": "0x3a2e3f",
+        "group": "Texts"
+      }
+    },
+    {
+      "name": "GUI:HomeBtn",
+      "class": "Button",
+      "properties": {
+        "position": {"x": 26, "y": 614},
+        "texture": "HomeBtn",
+        "callback": "__SwitchScreen",
+        "callbackContext": "gameState",
+        "args": ["Start"],
+        "anchor": {"x": 0.5, "y": 0.5},
+        "group": "GUI"
+      }
+    },
+    {
+      "name": "GUI:FullscreenBtn",
+      "class": "Button",
+      "properties": {
+        "position": {"x": 60, "y": 26},
+        "texture": "FullscreenBtn",
+        "callback": "__toggleFullScreen",
+        "callbackContext": "gameState",
+        "args": [],
+        "anchor": {"x": 0.5, "y": 0.5},
+        "group": "GUI"
+      }
+    },
+    {
+      "name": "GUI:MuteBtn",
+      "class": "Button",
+      "properties": {
+        "position": {"x": 26, "y": 26},
+        "texture": "MuteBtn",
+        "callback": "__toggleMute",
+        "callbackContext": "gameState",
+        "frame": 1,
+        "args": [],
+        "anchor": {"x": 0.5, "y": 0.5},
+        "group": "GUI"
+      }
+    },
+    {
+      "name": "GameOver:SyncMessage",
+      "class": "BitmapText",
+      "properties": {
+        "position": {"x": 180, "y": 420},
+        "anchor": {"x": 0.5, "y": 0.5},
+        "text": "Synchronization",
+        "visible": false,
+        "font": "verminVibes",
+        "size": 18,
+        "align": "center",
+        "group": "Texts"
+      }
+    }
+  ]
+}

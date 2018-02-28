@@ -1,0 +1,141 @@
+{
+  "engine": {
+    "preCombustion": {
+      "image": ["Fire01", "Fire02"],
+      "blendMode": "SOFT_LIGHT",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scale": {"initial": 0.4, "value": 0.8, "control": "linear"}
+    },
+    "postCombustion": {
+      "image": ["Fire03"],
+      "blendMode": "SOFT_LIGHT",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scale": {"initial": 0.8, "value": 1.2, "control": [{"x": 0, "y": 0}, {"x": 0.5, "y": 1}, {"x": 1, "y": 0}]},
+      "alpha": {"initial": 0, "value": 0.6, "control": [{"x": 0, "y": 0}, {"x": 0.5, "y": 1}, {"x": 1, "y": 0}]}
+    }
+  },
+  "player": {
+    "playerExplosion": {
+      "image": "Explosion",
+      "lifespan": { "min": 200, "max": 400 },
+      "delay": { "min": 0, "max": 200 },
+      "scale": {
+        "value": 0.8,
+        "control": [{"x":0, "y":0.3}, {"x":0.25, "y":0.75}, {"x":0.8, "y":1}, {"x":1, "y":1.4}]
+      },
+      "alpha": { "value": 1, "control": [ { "x": 0, "y": 1 }, { "x": 0.3, "y": 1 }, { "x": 0.6, "y": 0.2 }, { "x": 1, "y": 0 } ] },
+      "vx": { "value": { "min": -2, "max": 2 }, "control": [ { "x": 0, "y": 1 }, { "x": 1, "y": 0 } ] },
+      "vy": { "value": { "min": -5, "max": 0 }, "control": [ { "x": 0, "y": 1 }, { "x": 1, "y": 0 } ] },
+      "rotation": { "initial": 0, "delta": { "min": -3, "max": 3 } },
+      "emit": {
+        "name": {"at":[{"time":0, "value":"playerShrapnel"}, {"time":0.5, "value":"playerSmoke"}]},
+        "value": 0,
+        "at": [{"time":0, "value":0.4}, {"time":0.5, "value":2}]
+      }
+    },
+    "playerShrapnel": {
+      "image": "Scrap",
+      "delay": 0,
+      "lifespan": 300,
+      "velocity": {"initial":{"min":4, "max":8}, "radial":{"arcStart":0, "arcEnd":360}},
+      "scale": {"min":0.2, "max":0.4},
+      "rotation": {"initial":0, "delta":{"min":-9, "max":9}},
+      "alpha": {"value":1, "control":[{"x":0, "y":1}, {"x":0.75, "y":1}, {"x":1, "y":0}]},
+      "sendToBack": true
+    },
+    "playerSmoke": {
+      "image": "BlackSmoke",
+      "lifespan": {"min":400, "max":600},
+      "vx": 0,
+      "vy": {"value":{"min":-3, "max":-2}, "delta":-0.05, "control":[{"x":0, "y":1}, {"x":1, "y":0.5}]},
+      "scale": {
+        "value": {"min":0.4, "max":0.6},
+        "delta": 0.005,
+        "control": [{"x":0, "y":1}, {"x":0.6, "y":1}, {"x":1, "y":0.25}]
+      },
+      "alpha": {"value":0.3, "control":[{"x":0, "y":0}, {"x":0.3, "y":1}, {"x":1, "y":0}]},
+      "rotation": {"value":0, "delta":{"min":-2, "max":2}},
+      "sendToBack": true
+    }
+  },
+  "enemyShip": {
+    "enemyShipExplosion": {
+      "image": "Explosion",
+      "lifespan": { "min": 200, "max": 400 },
+      "delay": { "min": 0, "max": 200 },
+      "scale": {
+        "value": 0.8,
+        "control": [{"x":0, "y":0.3}, {"x":0.25, "y":0.75}, {"x":0.8, "y":1}, {"x":1, "y":1.4}]
+      },
+      "alpha": { "value": 1, "control": [ { "x": 0, "y": 1 }, { "x": 0.3, "y": 1 }, { "x": 0.6, "y": 0.2 }, { "x": 1, "y": 0 } ] },
+      "vx": { "value": { "min": -2, "max": 2 }, "control": [ { "x": 0, "y": 1 }, { "x": 1, "y": 0 } ] },
+      "vy": { "value": { "min": -5, "max": 0 }, "control": [ { "x": 0, "y": 1 }, { "x": 1, "y": 0 } ] },
+      "rotation": { "initial": 0, "delta": { "min": -3, "max": 3 } },
+      "emit": {
+        "name": { "at": [ { "time": 0, "value": "enemyShipShrapnel" }, { "time": 0.5, "value": "enemyShipSmoke" } ] },
+        "value": 0, "at": [ { "time": 0, "value": 0.4 }, { "time": 0.5, "value": 2 } ]
+      }
+    },
+    "enemyShipShrapnel": {
+      "image": "Scrap",
+      "delay": 0,
+      "lifespan": 300,
+      "velocity": {"initial":{"min":4, "max":8}, "radial":{"arcStart":0, "arcEnd":360}},
+      "scale": {"min":0.2, "max":0.4},
+      "rotation": {"initial":0, "delta":{"min":-9, "max":9}},
+      "alpha": {"value":1, "control":[{"x":0, "y":1}, {"x":0.75, "y":1}, {"x":1, "y":0}]},
+      "sendToBack": true
+    },
+    "enemyShipSmoke": {
+      "image": "BlackSmoke",
+      "lifespan": { "min": 400, "max": 600 },
+      "vx": 0,
+      "vy": { "value": { "min": -3, "max": -2 }, "delta": -0.05, "control": [ { "x": 0, "y": 1 }, { "x": 1, "y": 0.5 } ] },
+      "scale": { "value": { "min": 0.4, "max": 0.6 }, "delta": 0.005, "control": [ { "x": 0, "y": 1 }, { "x": 0.6, "y": 1 }, { "x": 1, "y": 0.25 } ] },
+      "alpha": { "value": 0.3, "control":[ { "x": 0, "y": 0 }, { "x": 0.3, "y": 1 }, { "x": 1, "y": 0 } ] },
+      "rotation": { "value": 0, "delta": { "min": -2, "max": 2 } },
+      "sendToBack": true
+    }
+  },
+  "asteroid": {
+    "asteroidExplosion": {
+      "image": "Flash",
+      "lifespan": {"min":200, "max":400},
+      "delay": {"min":0, "max":200},
+      "scale": {
+        "value": 0.8,
+        "control": [{"x":0, "y":0.3}, {"x":0.25, "y":0.75}, {"x":0.8, "y":1}, {"x":1, "y":1.4}]
+      },
+      "alpha": {"value":1, "control":[{"x":0, "y":1}, {"x":0.3, "y":1}, {"x":0.6, "y":0.2}, {"x":1, "y":0}]},
+      "vx": {"value":{"min":-2, "max":2}, "control":[{"x":0, "y":1}, {"x":1, "y":0}]},
+      "vy": {"value":{"min":-5, "max":0}, "control":[{"x":0, "y":1}, {"x":1, "y":0}]},
+      "rotation": {"initial":0, "delta":{"min":-3, "max":3}},
+      "emit": {
+        "name": { "at": [ { "time": 0, "value": "asteroidShrapnel" }, { "time": 0.5, "value": "asteroidSmoke" } ] },
+        "value": 0, "at": [ { "time": 0, "value": 0.4 }, { "time": 0.5, "value": 2 } ]
+      }
+    },
+    "asteroidShrapnel": {
+      "image": "Stone",
+      "delay": 0,
+      "lifespan": 300,
+      "velocity": {"initial":{"min":4, "max":8}, "radial":{"arcStart":0, "arcEnd":360}},
+      "scale": {"min":0.3, "max":0.5},
+      "rotation": {"initial":0, "delta":{"min":-9, "max":9}},
+      "alpha": {"value":1, "control":[{"x":0, "y":1}, {"x":0.75, "y":1}, {"x":1, "y":0}]},
+      "sendToBack": true
+    },
+    "asteroidSmoke": {
+      "image": "WhiteSmoke",
+      "lifespan": { "min": 400, "max": 600 },
+      "vx": 0,
+      "vy": { "value": { "min": -3, "max": -2 }, "delta": -0.05, "control": [ { "x": 0, "y": 1 }, { "x": 1, "y": 0.5 } ] },
+      "scale": { "value": { "min": 0.3, "max": 0.4 }, "delta": 0.005, "control": [ { "x": 0, "y": 1 }, { "x": 0.6, "y": 1 }, { "x": 1, "y": 0.25 } ] },
+      "alpha": { "value": 0.3, "control":[ { "x": 0, "y": 0 }, { "x": 0.3, "y": 1 }, { "x": 1, "y": 0 } ] },
+      "rotation": { "value": 0, "delta": { "min": -2, "max": 2 } },
+      "sendToBack": true
+    }
+  }
+}

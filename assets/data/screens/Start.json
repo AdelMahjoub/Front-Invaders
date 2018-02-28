@@ -1,0 +1,136 @@
+{
+  "prefabs": [
+    {
+      "name": "Start:Background",
+      "class": "ScrollingBackground",
+      "properties": {
+        "texture": "StarfieldPurple",
+        "position": {"x": 0, "y": 0},
+        "width": 360,
+        "height": 640,
+        "group": "Backgrounds"
+      }
+    },
+    {
+      "name": "Start:GameTitle",
+      "class": "BitmapText",
+      "properties": {
+        "position": {"x": 180, "y": 180},
+        "text": "front invaders",
+        "anchor": {"x": 0.5, "y": 0.5},
+        "font": "verminVibes",
+        "size": 40,
+        "align": "center",
+        "group": "Texts"
+      }
+    },
+    {
+      "name": "Start:StartBtn",
+      "class": "Button",
+      "properties": {
+        "position": {"x": 180, "y": 320},
+        "texture": "GlassBtn",
+        "callback": "__SwitchScreen",
+        "callbackContext": "gameState",
+        "args": ["Select"],
+        "anchor": {"x": 0.5, "y": 0.5},
+        "group": "Buttons"
+      }
+    },
+    {
+      "name": "Start:StartBtnLabel",
+      "class": "BitmapText",
+      "properties": {
+        "position": {"x": 180, "y": 322},
+        "anchor": {"x": 0.5, "y": 0.5},
+        "text": "Start",
+        "font": "verminVibes",
+        "size": 18,
+        "align": "center",
+        "tint": "0x3a2e3f",
+        "group": "Texts"
+      }
+    },
+    {
+      "name": "GUI:FullscreenBtn",
+      "class": "Button",
+      "properties": {
+        "position": {"x": 60, "y": 26},
+        "texture": "FullscreenBtn",
+        "callback": "__toggleFullScreen",
+        "callbackContext": "gameState",
+        "args": [],
+        "anchor": {"x": 0.5, "y": 0.5},
+        "group": "GUI"
+      }
+    },
+    {
+      "name": "GUI:MuteBtn",
+      "class": "Button",
+      "properties": {
+        "position": {"x": 26, "y": 26},
+        "texture": "MuteBtn",
+        "callback": "__toggleMute",
+        "callbackContext": "gameState",
+        "frame": 1,
+        "args": [],
+        "anchor": {"x": 0.5, "y": 0.5},
+        "group": "GUI"
+      }
+    },
+    {
+      "name": "GUI:HelpBtn",
+      "class": "Button",
+      "properties": {
+        "position": {"x": 334, "y": 26},
+        "texture": "HelpBtn",
+        "callback": "__SwitchScreen",
+        "callbackContext": "gameState",
+        "args": ["Help"],
+        "anchor": {"x": 0.5, "y": 0.5},
+        "group": "GUI"
+      }
+    },
+    {
+      "name": "GUI:InfoBtn",
+      "class": "Button",
+      "properties": {
+        "position": {"x": 334, "y": 614},
+        "texture": "InfoBtn",
+        "callback": "__SwitchScreen",
+        "callbackContext": "gameState",
+        "args": ["Info"],
+        "anchor": {"x": 0.5, "y": 0.5},
+        "group": "GUI"
+      }
+    },
+    {
+      "name": "GUI:LeaderboardBtn",
+      "class": "Button",
+      "properties": {
+        "position": {"x": 25, "y": 615},
+        "texture": "LeaderboardIcon",
+        "callback": "__showLeaderboard",
+        "visible": false,
+        "callbackContext": "gameState",
+        "args": [],
+        "anchor": {"x": 0.5, "y": 0.5},
+        "group": "Buttons"
+      }
+    },
+    {
+      "name": "Start:SyncMessage",
+      "class": "BitmapText",
+      "properties": {
+        "position": {"x": 25, "y": 615},
+        "anchor": {"x": 0, "y": 0.5},
+        "text": "Synchronization",
+        "visible": false,
+        "font": "verminVibes",
+        "size": 18,
+        "align": "center",
+        "group": "Texts"
+      }
+    }
+  ]
+}

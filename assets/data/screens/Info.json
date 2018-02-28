@@ -1,0 +1,40 @@
+{
+  "prefabs": [
+    {
+      "name": "Info:Background",
+      "class": "ScrollingBackground",
+      "properties": {
+        "texture": "StarfieldPurple",
+        "position": {"x": 0, "y": 0},
+        "isScrollable": false,
+        "width": 360,
+        "height": 640,
+        "group": "Backgrounds"
+      }
+    },
+    {
+      "name": "Info:Credits",
+      "class": "Image",
+      "properties": {
+        "texture": "Info:Credits",
+        "position": {"x": 180, "y": 320},
+        "scale": {"x": 0.5, "y": 0.5},
+        "anchor": {"x": 0.5, "y": 0.5},
+        "group": "Texts"
+      }
+    },
+    {
+      "name": "GUI:HomeBtn",
+      "class": "Button",
+      "properties": {
+        "position": {"x": 334, "y": 26},
+        "texture": "HomeBtn",
+        "callback": "__SwitchScreen",
+        "callbackContext": "gameState",
+        "args": ["Start"],
+        "anchor": {"x": 0.5, "y": 0.5},
+        "group": "GUI"
+      }
+    }
+  ]
+}

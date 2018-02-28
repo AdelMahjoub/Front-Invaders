@@ -1,0 +1,42 @@
+{
+  "prefabs": [
+    {
+      "name": "Leaderboard:Background",
+      "class": "ScrollingBackground",
+      "properties": {
+        "texture": "StarfieldBlue",
+        "position": {"x": 0, "y": 0},
+        "isScrollable": false,
+        "width": 360,
+        "height": 640,
+        "group": "Backgrounds"
+      }
+    },
+    {
+      "name": "GUI:HomeBtn",
+      "class": "Button",
+      "properties": {
+        "position": {"x": 334, "y": 26},
+        "texture": "HomeBtn",
+        "callback": "__SwitchScreen",
+        "callbackContext": "gameState",
+        "args": ["Start"],
+        "anchor": {"x": 0.5, "y": 0.5},
+        "group": "GUI"
+      }
+    },
+    {
+      "name": "Leaderboard:Title",
+      "class": "BitmapText",
+      "properties": {
+        "position": {"x": 180, "y": 130},
+        "anchor": {"x": 0.5, "y": 0.5},
+        "text": "top scorers",
+        "font": "verminVibes",
+        "size": 30,
+        "align": "center",
+        "group": "Texts"
+      }
+    }
+  ]
+}

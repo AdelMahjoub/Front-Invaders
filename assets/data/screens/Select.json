@@ -1,0 +1,190 @@
+{
+  "prefabs": [
+    {
+      "name": "Select:Background",
+      "class": "ScrollingBackground",
+      "properties": {
+        "texture": "StarfieldPurple",
+        "position": {"x": 0, "y": 0},
+        "width": 360,
+        "height": 640,
+        "group": "Backgrounds"
+      }
+    },
+    {
+      "name": "Select:FrameSelectionMessage",
+      "class": "BitmapText",
+      "properties": {
+        "position": {"x": 180, "y": 160},
+        "text": "Select your frame",
+        "anchor": {"x": 0.5, "y": 0.5},
+        "font": "verminVibes",
+        "size": 26,
+        "align": "center",
+        "group": "Texts"
+      }
+    },
+    {
+      "name": "Select:FrameSelectionContainer",
+      "class": "Image",
+      "properties": {
+        "texture": "GlassPanel",
+        "position": {"x": 180, "y": 300},
+        "anchor": {"x": 0.5, "y": 0.5},
+        "group": "Backgrounds"
+      }
+    },
+    {
+      "name": "Select:RightArrowBtn",
+      "class": "Button",
+      "properties": {
+        "position": {"x": 320, "y": 300},
+        "texture": "Arrow",
+        "callback": "__browseShips",
+        "callbackContext": "gameState",
+        "args": [1],
+        "anchor": {"x": 0.5, "y": 0.5},
+        "group": "Buttons"
+      }
+    },
+    {
+      "name": "Select:LeftArrowBtn",
+      "class": "Button",
+      "properties": {
+        "position": {"x": 40, "y": 300},
+        "texture": "Arrow",
+        "callback": "__browseShips",
+        "callbackContext": "gameState",
+        "args": [-1],
+        "anchor": {"x": 0.5, "y": 0.5},
+        "scale": {"x": -1, "y": 1},
+        "group": "Buttons"
+      }
+    },
+    {
+      "name": "Select:AngularShip",
+      "class": "Image",
+      "properties": {
+        "texture": "AngularShip",
+        "position": {"x": 179, "y": 300},
+        "anchor": {"x": 0.5, "y": 0.5},
+        "visible": false,
+        "group": "ShipSelection"
+      }
+    },
+    {
+      "name": "Select:ReactShip",
+      "class": "Image",
+      "properties": {
+        "texture": "ReactShip",
+        "position": {"x": 179, "y": 300},
+        "anchor": {"x": 0.5, "y": 0.5},
+        "visible": false,
+        "group": "ShipSelection"
+      }
+    },
+    {
+      "name": "Select:VueShip",
+      "class": "Image",
+      "properties": {
+        "texture": "VueShip",
+        "position": {"x": 179, "y": 300},
+        "anchor": {"x": 0.5, "y": 0.5},
+        "visible": false,
+        "group": "ShipSelection"
+      }
+    },
+    {
+      "name": "Select:EmberShip",
+      "class": "Image",
+      "properties": {
+        "texture": "EmberShip",
+        "position": {"x": 179, "y": 300},
+        "anchor": {"x": 0.5, "y": 0.5},
+        "visible": false,
+        "group": "ShipSelection"
+      }
+    },
+    {
+      "name": "Select:ShipName",
+      "class": "BitmapText",
+      "properties": {
+        "position": {"x": 180, "y": 370},
+        "text": "",
+        "anchor": {"x": 0.5, "y": 0.5},
+        "font": "verminVibes",
+        "size": 18,
+        "tint": "0x3a2e3f",
+        "align": "center",
+        "group": "Texts"
+      }
+    },
+    {
+      "name": "Select:TakeOffBtn",
+      "class": "Button",
+      "properties": {
+        "position": {"x": 180, "y": 460},
+        "texture": "GlassBtn",
+        "callback": "__SwitchScreen",
+        "callbackContext": "gameState",
+        "args": ["Play"],
+        "anchor": {"x": 0.5, "y": 0.5},
+        "group": "Buttons"
+      }
+    },
+    {
+      "name": "Select:TakeOffBtnLabel",
+      "class": "BitmapText",
+      "properties": {
+        "position": {"x": 180, "y": 462},
+        "anchor": {"x": 0.5, "y": 0.5},
+        "text": "GO !",
+        "font": "verminVibes",
+        "size": 18,
+        "align": "center",
+        "tint": "0x3a2e3f",
+        "group": "Texts"
+      }
+    },
+    {
+      "name": "GUI:HomeBtn",
+      "class": "Button",
+      "properties": {
+        "position": {"x": 26, "y": 614},
+        "texture": "HomeBtn",
+        "callback": "__SwitchScreen",
+        "callbackContext": "gameState",
+        "args": ["Start"],
+        "anchor": {"x": 0.5, "y": 0.5},
+        "group": "GUI"
+      }
+    },
+    {
+      "name": "GUI:FullscreenBtn",
+      "class": "Button",
+      "properties": {
+        "position": {"x": 60, "y": 26},
+        "texture": "FullscreenBtn",
+        "callback": "__toggleFullScreen",
+        "callbackContext": "gameState",
+        "args": [],
+        "anchor": {"x": 0.5, "y": 0.5},
+        "group": "GUI"
+      }
+    },
+    {
+      "name": "GUI:MuteBtn",
+      "class": "Button",
+      "properties": {
+        "position": {"x": 26, "y": 26},
+        "texture": "MuteBtn",
+        "callback": "__toggleMute",
+        "callbackContext": "gameState",
+        "frame": 1,
+        "args": [],
+        "anchor": {"x": 0.5, "y": 0.5},
+        "group": "GUI"
+      }
+    }
+  ]
+}
